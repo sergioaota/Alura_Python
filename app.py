@@ -24,7 +24,7 @@ def voltar_ao_menu_principal():
     main()
 
 def opcao_invalida():
-    print('Opção Invalida!\n')
+    print('Opção Inválida!\n')
     voltar_ao_menu_principal()
 
 def exibir_subtitulo(texto):
@@ -33,7 +33,7 @@ def exibir_subtitulo(texto):
     print()
 
 def cadastrar_novo_restaurante():
-    exibir_subtitulo('Cadastro de novos restaurantes\n')
+    exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!\n')
@@ -41,7 +41,7 @@ def cadastrar_novo_restaurante():
     voltar_ao_menu_principal()
 
 def listar_restaurantes():
-    exibir_subtitulo('Listando os restaurantes:\n')
+    exibir_subtitulo('Listando os restaurantes:')
 
     for restaurante in restaurantes:
         print(f'.{restaurante}')
